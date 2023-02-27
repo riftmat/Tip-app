@@ -1,0 +1,178 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(180, 224, 241);
+}
+
+h1 {
+    text-align: center;
+    max-width: 120px;
+    max-height: 120px;
+    word-break: break-all;
+    letter-spacing: 8px;
+    margin-bottom: 5%;
+    color: rgba(53, 85, 94, 0.623);
+    margin-top: 10%;
+}
+
+.ma {
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 650px;
+    height: 400px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.data {
+    margin-right: 5px;
+    padding: 10px;
+    width: 250px;
+}
+
+.bill {
+   margin-bottom: 8%;
+} .bill input {
+    width: 95%;
+    border-radius: 5px;
+    height: 30px;
+    border: 0px;
+    background: rgb(234, 247, 248);
+    background-image: url(images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 5px;
+    text-align: right;
+    font-size: large;
+    font-weight: 1000;
+    font-family: Verdana, Arial;
+    color: rgb(17, 53, 54);
+} .bill p {
+    color: rgb(118, 128, 128);
+    font-weight: 900;
+}
+
+.percent {
+    margin-bottom: 8%;
+} .percent p {
+    color: rgb(118, 128, 128);
+    font-weight: 900;
+}
+
+.numbPercent {
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+} 
+.numbPercent button {
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0px;
+    background: rgb(45, 75, 64);
+    font-weight: 1000;
+    font-size: 18px;
+    color: white;
+    margin: 5px;
+    padding: 3px;
+    transition: 0.3s;
+}
+
+.numbPercent input {
+    background: rgb(236, 236, 236);
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 1000;
+    font-size: 18px;
+    color: rgb(204, 204, 204);
+    margin: 5px;
+    text-align: center;
+}
+
+.people p {
+    color: rgb(118, 128, 128);
+    font-weight: 900;
+} .people input {
+    width: 95%;
+    border-radius: 5px;
+    height: 30px;
+    border: 0px;
+    background: rgb(234, 247, 248);
+    background-image: url(images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 5px;
+    text-align: right;
+    font-size: large;
+    font-weight: 1000;
+    font-family: Verdana, Arial;
+    color: rgb(17, 53, 54);
+}
+
+.result {
+    background: rgb(45, 75, 64);
+    width: 250px;
+    height: 234px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.tip, .total {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.amount, .tamount {
+    color: aliceblue;
+    font-weight: 350;
+}
+
+.person, .tperson {
+    color: rgb(111, 148, 134);
+}
+
+.cash, .tcash {
+    font-size: 30px;
+    font-weight: 1000;
+    color: rgb(151, 226, 197)
+}
+
+.result button {
+    background: rgb(151, 226, 197);
+    border: none;
+    height: 35px;
+    width: 250px;
+    border-radius: 5px;
+    margin-top: 80px;
+    font-size: 16px;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+button:hover {
+    transition: 0.5s;
+    background: rgb(0, 170, 0);
+}
+
+button:focus {
+    animation: cli 0.4s;
+}
+
+@keyframes cli {
+    0% {scale: 1;}
+    50% {scale: 1.05;}
+    100% {scale: 1;}
+}
