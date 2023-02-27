@@ -1,2 +1,2 @@
 # Tip-app
-Tip calculation app
+Tip calculator app
